@@ -1,0 +1,113 @@
+Active Directory Project Setup / Installation instructions:
+
+1. Install Virtual Box (VirtualBox.org)
+
+2. Download Windows 10 ISO image (https://www.microsoft.com/en-ca/software-download/windows10) 
+	a. "Download Tool Now"
+	b. "Create Installation Media (USB flash drive, DVD, or ISO file) for another PC
+	c. ISO file (Save ISO file in preferred folder.)
+
+3. Open Virtual Box and click "New" (to create a new machine)
+	a. Give VM a name and a folder to save to
+	b. Select Microsoft ISO image
+	c. Check box "Skip Unattended Installation."
+	d. Set base memory as 4gb or higher, 1 CPU. Click "Next".
+	e. Set Virtual Hard Disk to 50gb. Click "Next".
+	f. Click "Finish", then click the green arrow "Start."
+	g. Select "I don't have a product key" when prompted when Windows is installing
+	h. Select "Windows 10 Pro" when selecting desired OS prompt. Click "Next."
+	i. Accept License TOS.
+	J. Select "Custom Windows Install Only"
+	k. Click "Next" after selecting what Drive to install on.
+	l. Windows 10 should then begin installing in the background
+
+4. Install Kali Linux (https://www.kali.org)
+	a. Download pre-built VM Kali "VirtualBox 64 bit" virtual machine. (https://www.kali.org/get-kali/#kali-	virtual-machines)
+	b. Download and Install "7-Zip", since Kali VirtualBox is a 7-Zip extension (https://www,7-zip.org)
+	c. Kali default login credentials for initial install is "kali/kali"
+	d. Navigate to the Kali installer, right click and select "7-Zip""Extract to the directory you chose."
+	e. Double click on the "kali-linux.VBOX" file extension. Must be ".vox" extension. It should then be 	automatically installed into Virtual Box.
+	f. Start kali in Virtual Box. Kali default login credentials for initial install is "kali/kali"
+
+5. Install Windows Server
+	a. Google and select "Windows Server 2022 | Microsoft Evaluation Center'
+	b. Under the "Get started for free" section, click "Download the ISO"
+	c. Fill in Registration information.
+	d. Click on "ISO downloads 64 bit edition"
+	e. In Virtual Box, click "New" to create a new machine.
+	f. Give the machine a name and select the Windows Server ISO image you just downloaded. Leave the rest of 	the drop down menus as default. Click "Skip Unattended installation."
+	g. Change Basic Memory to 4gb or faster, 1 CPU. Click "Next."
+	h. Set Virtual Hard Disk to 50gb. Click "Finish."
+	i. Click green "Start" button in Virtual Box to start Windows Server.
+	j. Click "Install Now" when prompted.
+	k. Select the "Windows Server 2022 Standard Evaluation (Desktop Experience)
+	l. Click "Next" and accept the TOS, click "Next" again.
+	m. Click "Custom Install"
+	n. Select the "Drive" you want to install on.
+	o. Installing will take about 10 minutes. When prompted, create and remember a password. Click "Finish."
+	p. The "Insert" drop-down tab at the top, "keyboard", "Insert Ctrl Alt Del"
+	q. Ensure installation has been completed successfully, then move on to step 6, installing Splunk.
+
+6. Install Splunk Server
+	a. Navigate to ubuntu.com/server
+	b. Click on "Download Ubuntu Server" button
+	c. Download the latest version (ex: Ubuntu 24.04 LTS)
+	d. Navigate to Virtual Box, select "New' to create an new VM.
+	e. Name the machine and select the file for the Ubuntu Server you just downloaded.
+	f. Click "Skip Unattended Installation."
+	g. Set Base Memory to 8gb or higher, 2 CPU's.
+	h. We want the Splunk server to be beefy, because it will be ingesting data and performing searches on it.
+	i. Set Virtual Hard Disk to 100gb. Click "Finish." Click the green "Start" arrow button.
+	j. Select first option "Try or Install Ubuntu Server" on terminal looking style installation screen.
+	h. Keep selecting the "Done" and "Continue" options to complete the installation process without modifying 	anything. Even the RED "Continue" box near the end.
+	j. Create name, server name, username, and password. Click "Done."
+	k. Select "Skip for Now" on Ubuntu Pro prompt
+	l. Skip SSH option, click green "Done."
+	m. Don't Select any of the dozens of additional options. Scroll down and select the green "Done."
+	n. Ubuntu will begin installing. Installation is completed when the "Reboot Now" option appears. Select 	"Reboot Now".
+	o. Error WILL appear that says "Failed unmounting /cdrom." Hit the "Enter" button to proceed.
+	p. Once instaled, there will be a logon screen. Enter username and password you created.
+	q. Enter command "sudo apt-get update && sudo apt-get upgrade -y" to update/upgrade everything.
+	r. Hit "Enter" when presented with default "Which services should be restarted/" screen.
+	s. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
